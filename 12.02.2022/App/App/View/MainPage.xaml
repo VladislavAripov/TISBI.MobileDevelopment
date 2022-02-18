@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.View.MainPage">
+
+    <ScrollView>
+        <StackLayout BindableLayout.ItemsSource="{Binding UsersVisits}">
+            <Label
+                x:Name="Title" />
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <Frame BorderColor="Navy"
+                           BackgroundColor="Azure"
+                           CornerRadius="10">
+                        <StackLayout>
+                            <Label Text="{Binding UserName}"/>
+                            <Label Text="{Binding UserIp}"/>
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
