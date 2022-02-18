@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.View.MainPage">
+
+    <ScrollView>
+        <StackLayout
+            Padding="25">
+            <StackLayout>
+                <Label Text="История посещения электронной библиотеки"
+                       FontSize="Title"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <Frame BorderColor="Aquamarine"
+                   HasShadow="True"
+                   BackgroundColor="Azure"
+                   CornerRadius="5">
+                <StackLayout BindableLayout.ItemsSource="{Binding UsersVisits}"
+                             Padding="25 0 25 0">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <Frame BorderColor="Navy"
+                                   BackgroundColor="Cornsilk"
+                                   CornerRadius="7">
+                                <StackLayout>
+                                    <Label Text="{Binding UserName}"
+                                           FontSize="Large"
+                                           FontAttributes="Bold"/>
+                                    <Label Text="{Binding UserIp}"
+                                           FontSize="Medium"/>
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
