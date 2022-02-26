@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 var services = builder.Services;
 var configuration = builder.Configuration;
 
@@ -15,6 +16,7 @@ services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connectionString);
 });
 
+
 var app = builder.Build();
 
 app.UseHttpsRedirection();
@@ -22,5 +24,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
 
 app.Run();
