@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:views="clr-namespace:PhelpsEno.Views;assembly=PhelpsEno"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.IsSwipePagingEnabled="true"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            x:Class="PhelpsEno.Views.Tab" BarBackground="#FFDB5C" BarTextColor="#212121" SelectedTabColor="#212121" UnselectedTabColor="#666666">
+    
+    
+    <TabbedPage.Children>
+        <views:RatePage IconImageSource="icon_rate.png"/>
+        <views:ItemsPage IconImageSource="icon_drive.png"/>
+        <views:ProfilePage IconImageSource="icon_profile.png"/>
+    </TabbedPage.Children>
+</TabbedPage>

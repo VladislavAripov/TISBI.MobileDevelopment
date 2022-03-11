@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhelpsEno.Views.RatePage" Title="Рейтинг" BackgroundColor="White">
+    <StackLayout>
+        <Label FontSize="16" FontFamily="Roboto" Margin="20" TextColor="Black">
+            Ваше место в рейтинге: 143
+        </Label>
+        
+        <Grid  Margin="10" HorizontalOptions="CenterAndExpand">
+       <Grid.ColumnDefinitions>
+           <ColumnDefinition Width="150"></ColumnDefinition>
+           <ColumnDefinition Width="150"></ColumnDefinition>
+       </Grid.ColumnDefinitions>
+       
+       <Grid.RowDefinitions>
+           <RowDefinition Height="20"></RowDefinition>
+           <RowDefinition Height="20"></RowDefinition>
+       </Grid.RowDefinitions>
+            <BoxView Grid.Row="0" Grid.Column="0" Color="#C2C9D1"></BoxView>
+           <Label Grid.Row="0" Grid.Column="0" BackgroundColor="#C2C9D1" HorizontalOptions="StartAndExpand">#</Label>
+            <BoxView Grid.Row="0" Grid.Column="1" Color="#C2C9D1"></BoxView>
+           <Label Grid.Row="0" Grid.Column="1" BackgroundColor="#C2C9D1" HorizontalOptions="CenterAndExpand">Пользователь</Label>
+           <Label Grid.Row="1" Grid.Column="0" BackgroundColor="White" HorizontalOptions="StartAndExpand">1</Label>
+           <Label Grid.Row="1" Grid.Column="1" BackgroundColor="White" HorizontalOptions="CenterAndExpand">Ant-mag</Label>
+        </Grid>
+    </StackLayout>
+</ContentPage>

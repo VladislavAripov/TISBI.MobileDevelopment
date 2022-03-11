@@ -14,7 +14,9 @@ namespace PhelpsEno
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            Sharpnado.Tabs.Initializer.Initialize(false, false);
+            Sharpnado.Shades.Initializer.Initialize(loggerEnable: false);
+            MainPage = new AuthorizePage();
         }
 
         protected override void OnStart()

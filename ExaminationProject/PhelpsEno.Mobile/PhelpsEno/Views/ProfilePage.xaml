@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhelpsEno.Views.ProfilePage"
+             Title="Профиль"
+             Shell.NavBarIsVisible="False">
+    
+    <StackLayout x:Name="ContentArea" BackgroundColor="White" Padding="20">
+
+        <StackLayout x:Name="BottomDrawer" Spacing="30">
+            
+            <StackLayout x:Name="LabelSubtitle" Spacing="5">
+                <Label x:Name="Label" 
+                       FontSize="20" 
+                       FontFamily="Roboto" 
+                       TextColor="Black">
+                    Арипов Владислав
+                </Label> 
+                <Label x:Name="Subtitle" 
+                       FontSize="14" 
+                       FontFamily="Roboto">
+                    vlad.aripov.007@gmail.com
+                </Label>
+            </StackLayout>
+            
+            <StackLayout x:Name="ListMenu">
+                
+                <StackLayout Orientation="Horizontal">
+                    
+                    <Image Source="icon_tips_for_me.png"></Image>
+                    <Label FontSize="14" 
+                           TextColor="Black" 
+                           Margin="15">
+                        Советы для меня
+                    </Label>
+                    
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal">
+                    
+                    <Image Source="icon_my_sessions"></Image>
+                    <Label FontSize="14" 
+                           TextColor="Black" 
+                           Margin="15">
+                        Мои сессии
+                    </Label>
+                    
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal">
+                    
+                    <Image Source="icon_calibration_device"></Image>
+                    <Label FontSize="14" 
+                           TextColor="Black" 
+                           Margin="15">
+                        Калибровка устройства
+                    </Label>
+                    
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal">
+                    
+                    <Image Source="icon_about_project.png"></Image>
+                    <Label FontSize="14" 
+                           TextColor="Black" 
+                           Margin="15">
+                        О проекте
+                    </Label>
+                </StackLayout>
+                
+            </StackLayout>
+            
+        </StackLayout>
+        
+        <Button Text="Выйти" TextColor="White"
+                WidthRequest="175" HorizontalOptions="CenterAndExpand"
+                VerticalOptions="EndAndExpand"
+                CornerRadius="48" BackgroundColor="Red">
+        </Button>
+
+    </StackLayout>
+</ContentPage>

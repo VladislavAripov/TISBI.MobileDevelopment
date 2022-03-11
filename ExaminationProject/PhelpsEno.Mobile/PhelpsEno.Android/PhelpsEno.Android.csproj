@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Sharpnado.Tabs" Version="2.2.0" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
@@ -68,6 +69,14 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_rate.png" />
+    <AndroidResource Include="Resources\drawable\icon_drive.png" />
+    <AndroidResource Include="Resources\drawable\icon_profile.png" />
+    <AndroidResource Include="Resources\drawable\icon_tips_for_me.png" />
+    <AndroidResource Include="Resources\drawable\icon_my_sessions.png" />
+    <AndroidResource Include="Resources\drawable\icon_calibration_device.png" />
+    <AndroidResource Include="Resources\drawable\icon_about_project.png" />
+    <AndroidResource Include="Resources\drawable\icon_authorize.png" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
